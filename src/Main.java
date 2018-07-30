@@ -28,13 +28,20 @@ public class Main {
         while (iterator.hasNext()){
             sum += iterator.next();
         }
+        System.out.println("Values bigger than average: ");
         double average = sum/set.size();
-        System.out.println("Average " + average);
+        for (int y :set){
+            if(y > average){
+                System.out.print(y + " ");
+            }
+        }
+        System.out.println();
+        System.out.printf("Average %.2f", average);
 
         //drukowanie wartości większych od średniej
         System.out.println();
-        System.out.println("Values bigger than average: ");
-        double sum1 = 0;
+        //System.out.println("Values bigger than average: ");
+       /* double sum1 = 0;
         Iterator<Integer> iterator1 = set.iterator();
         while (iterator1.hasNext()){
             sum1 += iterator1.next();
@@ -45,7 +52,7 @@ public class Main {
                 System.out.print(y + " ");
             }
         }
-
+        */
 
     }
 }
