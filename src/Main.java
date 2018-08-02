@@ -4,11 +4,16 @@ public class Main {
     public static void main(String[] args) {
 
         Random random = new Random();
-        int x = 50;
+
+        //Integer arr[] = new Integer[50];
+
         Set<Integer> set = new HashSet<>();
-        for (int i = 0; i < x; i++) {
+
+        while (set.size() <= 49) {
             set.add(random.nextInt(1000));
         }
+
+        System.out.println(set.size());
 
         /*Iterator<Integer> iterator = set.iterator();
         while (iterator.hasNext()){
